@@ -1,0 +1,38 @@
+
+-- Table: public.moon_cycles
+
+-- DROP TABLE public.moon_cycles;
+
+CREATE TABLE public.moon_cycles
+(
+    "Date" character varying COLLATE pg_catalog."default" NOT NULL,
+    "Moon Phase" character varying COLLATE pg_catalog."default",
+    CONSTRAINT moon_cycles_pkey PRIMARY KEY ("Date")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.moon_cycles
+    OWNER to postgres;
+
+-- Table: public.yelp_table
+
+-- DROP TABLE public.yelp_table;
+
+CREATE TABLE public.yelp_table
+(
+    user_id character varying COLLATE pg_catalog."default",
+    business_id character varying COLLATE pg_catalog."default",
+    state character varying COLLATE pg_catalog."default",
+    city character varying COLLATE pg_catalog."default",
+    categories character varying COLLATE pg_catalog."default",
+    review_id character varying COLLATE pg_catalog."default" NOT NULL,
+    stars integer,
+    date character varying COLLATE pg_catalog."default",
+    CONSTRAINT yelp_table_pkey PRIMARY KEY (review_id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.yelp_table
+    OWNER to postgres;

@@ -61,7 +61,6 @@
 </ol>
 </ol>
 <ol>
-<li><em>Stars (review score ranging from 1 to 5)</em></li>
 </ol>
 <ol>
 <ol>
